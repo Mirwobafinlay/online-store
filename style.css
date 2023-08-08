@@ -1,0 +1,562 @@
+@import url('https://fonts.googleapis.com/css2?family=spartan:wght@100;200;300;400;500;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+}
+h1{
+    font-size: 50px;
+    line-height: 64px;
+    color: black;
+}
+h2{
+    font-size: 46px;
+    line-height: 54px;
+    color: black;
+}
+h4{
+    font-size: 20px;
+    color: black;
+}
+h6{
+    font-size: 16px;
+    font-weight: 700;
+}
+p{
+    font-size: 16px;
+    color: gray;
+    margin: 15px 0 20px 0;
+}
+.section-p1{
+    padding: 40px 80px;
+}
+.section-m1{
+    margin: 40px 0;
+}
+body{
+    width: 100%;
+}
+
+/*Navbar*/
+#nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+    padding: 20px 80px; /*padding top and bottom= 20 left and right =80 */
+    background: #101d2c; /*for navigation bar background color choose btn #E3E6F3 and #101d2c */
+    box-shadow: 0 5px 15 rgba(0, 0, 0, 0.06); /*from x = 0, from y = 5px radius = 15px */ 
+}
+#nav img{
+    width: 60px;
+    height: 60px;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+    transition: 1.2s ease;
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-size: 800;
+    color: #E3E6F3;
+    transition: 0.5s ease;
+}
+/* hover for the words */
+#navbar li a:hover {
+    color: #ff4500;
+} 
+
+/*add a line below the content you hovering*/
+#navbar li a:hover::after {
+    content: " ";
+    width: 50%;
+    height: 2px;
+    background: #ff4500;
+    position: absolute; 
+    bottom: -4px;
+    left: 20px;
+}
+/* Home Page*/
+#hero{
+   background-image: url(images/Home.jpg); 
+   height: 90vh;
+   width: 100%;
+   background-size: cover;
+   background-position: top 25% right 0;
+   padding: 0 80px;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: center;
+}
+#hero h4{
+    padding-bottom: 15px;
+}
+#hero h1{
+    color: blue;
+ }
+#hero button{
+    background-image: url(images/button);
+    background-color: transparent;
+    color: blue;
+    padding: 14px 80px 14px 65px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+    border: none;
+}
+     /*Features*/
+
+#feature{
+    text-align: center;
+    align-items: center;
+}
+
+#feature img{
+width: 80px;
+height: 80px;
+}
+#feature .fe-box{
+    width: 100%;
+    margin-bottom: 10px;
+}
+#feature{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#feature .fe-box{
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+    border: 1px solid aqua;
+    border-radius: 4px;
+    margin: 15px 0;
+}
+#feature .fe-box:hover{
+    box-shadow: 10px 10pxx 54px rgba(70, 62, 221, 0.1);
+}
+#feature .fe-box h6{
+    display: inline-block;
+     padding: 9px 8px 6px 8px;
+     line-height: 1;
+     border-radius: 4px;
+     color: aqua;
+     background-color: azure;
+}
+
+/*Products*/
+#product1{
+    text-align: center;
+}
+#product1 .pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+#product1 .pro{
+    width: 23px;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid white;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+
+}
+#product1 .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06); 
+    color: blue;
+}
+#product1 .pro img{
+width: 100%;
+height: 280px;
+border-radius: 20px;
+}
+#product1 .pro .des{
+    text-align: start;
+     padding: 10px 0;
+}
+#product1 .pro .des span{
+    color: blue;
+    font-size: 12px;
+}
+#product1 .pro .des .a{
+    text-align: start;
+    align-items: end;
+}
+#product1 .pro .des{
+    padding-top: 7px;
+    color: blue;
+    font-size: 14px;
+} 
+#product1 .pro .des i{
+    font-size: 12px;
+    color: orangered;
+}
+#product1 .pro .des h4{
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: black;
+}
+#product1 .pro .cart{
+    width: 40px;
+    height: 30px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: white;
+    font-weight: 500;
+    color: rgb(40, 220, 88);
+    border: 1px solid white;
+    position: absolute;
+    right: 0;
+    
+}
+#product1 .pro-container{
+    display: flex;
+     flex-wrap: wrap;
+  
+}
+
+/*Banner*/
+#banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(images/banner);
+    height: 40vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+#banner h4{
+    color:white;
+}
+#banner h2{
+    color: white;
+}
+#banner span{
+    color: orangered;
+}
+button .normal{
+      font-size: 14px;
+      font-weight: 600;
+      padding: 15px 30px;
+      color: black;
+      background-color: white;
+      border-radius: 4px;
+      cursor: pointer;
+      border: none;
+      outline: none;
+      transition: 0.2s;
+}
+#banner button:hover{
+    background-color: aqua;
+    color: white;
+}
+
+/*Featured Products*/
+#product2{
+    text-align: center;
+}
+#product2 .pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+#product2 .pro{
+    width: 23px;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid white;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+
+}
+#product2 .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06); 
+    color: blue;
+}
+#product2 .pro img{
+width: 100%;
+height: 280px;
+border-radius: 20px;
+display: flex;
+justify-content: space-between;
+
+}
+
+#product2 .pro-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  
+}
+/*Footer*/
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+footer .col{
+    display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   margin-bottom: 20px;
+
+}
+footer .logo{
+    margin-bottom: 30px;
+    width: 50px;
+    height: 50px;
+}
+footer h4{
+    font-size: 14px;
+    padding-bottom: 20px;
+    align-items: center;
+}
+footer p{
+    font-size: 13px;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 10px;
+}
+footer .row{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  
+}
+footer .row img{
+    width: 40px;
+    height: 40px;
+}
+footer .follow h4{
+   color: blue;
+   padding-right: 4px;
+   cursor: pointer;
+
+}
+footer .copyright{
+    text-align: center;
+    width: 100%;
+}
+/*Mobile*/
+
+
+/* hamburger menu for mobile phones*/
+#mobile{
+    color: #E3E6F3;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 6px;
+}
+#close{
+    color: #E3E6F3;
+    display: none;
+}
+
+/*making  navigation bar responsive for medium screen devices, "hamburger menu"*/
+@media (max-width:799px) {
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 200px;
+        background: #101d2c;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 80px 0 0 10px; /* from top 80px right 0 bottom 0 and left 10px */
+        transition: 0.5s ease;
+    }
+    #navbar.active{
+        right: 0px;
+    }
+    #navbar li{
+        margin-bottom: 25px;
+    }
+    #mobile{
+        display: flex;
+    }
+    #mobile i{
+        display: flex;
+        padding-left: 20px;
+    }
+    #close{
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        font-size: 24px; 
+        color: white;
+    }
+}
+
+/*making  navigation bar responsive for small screen devices, "hamburger menu"*/
+@media (max-width: 477px) {
+    #nav {
+        padding: 10px 30px;
+        justify-content: space-between;
+    }
+}
+/*Cart Page*/
+#cart{
+text-align: center;
+
+}
+.payment img{
+    width: 350px;
+    height: 320px;
+    position: relative;
+    left: 35%;
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: flex-start;
+    box-shadow: 0, 0, 0, 0.2 rgba(black, green, rgb(127, 127, 137), alpha);
+}
+
+.payment img:hover{
+    box-shadow: 0, 0, 0, 0.6 rgba(red, green, blue, alpha);
+}
+#cart .link{
+    text-align: center;
+    justify-content: space-around;
+    
+}
+.link h4{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.link a{
+size-adjust: 40px;
+}
+.link .button{
+    width: 100%;
+    height: 80px;
+
+}
+#about{
+    align-items: center;
+    text-align: center;
+}
+#about .person{
+   text-align: center;
+    margin-bottom: 20px;
+}
+#about .person img{
+    left: 40%;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 600px;
+    box-sizing: border-box;
+    box-shadow: 0,0,0,0.2 rgba(red, green, blue, alpha);
+}
+#about .person img:hover{
+    border-radius: 20%;
+}
+/*Contact Form*/
+#contact{
+    width: 100%;
+    position: relative;
+   
+}
+#contact h4{
+    text-align: center;
+}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  label {
+    padding: 12px 12px 12px 0;
+    display: flex;
+  }
+  
+  input[type=submit] {
+    background-color: #18088f;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  input[type=submit]:hover {
+    background-color: orange;
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+  
+  #close{
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    color: black;
+    font-size: 20px;
+  }
